@@ -1,6 +1,8 @@
+import { colorSchemeObj, numColors, numWaters } from "./Constants";
+
 export function sortingFunc() {
   const firstArr: Array<number> = [];
-  for (let i = 1; i < 13; i++) {//! change for constanta
+  for (let i = 1; i <= numColors; i++) {
     for (let j = 0; j < 4; j++) {
       firstArr.push(i);
     }
@@ -14,11 +16,12 @@ export function sortingFunc() {
   }
 
   const exitArr: Array<Array<number>> = [];
-  for (let i = 0; i < secondArr.length; i += 4) {//! change for constanta
-    const chunk = secondArr.slice(i, i + 4);//! change for constanta
+  for (let i = 0; i < secondArr.length; i += numWaters) {
+    const chunk = secondArr.slice(i, i + numWaters);
     exitArr.push(chunk);
+    // colorSchemeObj.push(chunk);
   }
 
   console.log('firstArrLength:', firstArrLength, 'firstArr:', firstArr, 'secondArr:',
-    secondArr, 'exitArr:', exitArr, 'exitArr.length:', exitArr.length);
+    secondArr, 'exitArr:', exitArr, 'colorSchemeObj:', colorSchemeObj);
 }
