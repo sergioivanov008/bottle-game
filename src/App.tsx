@@ -1,15 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import AppHeader from './AppHeader/AppHeader';
 import AppBody from './AppBody/AppBody';
+import { sortingFunc } from './Utils/Sorting';
 
 function App() {
+  console.log('App');
+  // sortingFunc();
+
   return (
     <div className="App">
       <AppHeader/>
       <AppBody/>
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -22,7 +26,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }

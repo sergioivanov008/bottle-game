@@ -1,0 +1,11 @@
+.AppBody{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: calc(90vh/2) calc(90vh/2);
+}

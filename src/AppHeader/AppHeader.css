@@ -1,0 +1,9 @@
+.AppHeader{
+  /* text-align: center;*/
+
+  background-color: #5b677d;
+  min-height: 10vh;
+  display: flex;
+  /* flex-direction: column; */
+  color: white;
+}

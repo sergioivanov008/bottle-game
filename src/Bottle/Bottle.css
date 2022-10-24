@@ -1,0 +1,16 @@
+.Bottle{
+  width: 50px;
+  height: 250px;
+  border: 2px solid #ffffff;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.Bottle:hover{
+  border: 2px solid #ff0000;
+}
