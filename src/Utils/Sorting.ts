@@ -7,13 +7,6 @@ export function sortingFunc() {
   }
   const firstArrLength = firstArr.length;
 
-
-  // const rand: Number[] = [];
-  // for (let i = 0; i < firstArrLength; i++) {
-  //   const el = Math.round(Math.random() * firstArrLength);
-  //   rand.push(el);
-  // }
-
   const secondArr: Array<number> = [];
   while (secondArr.length !== firstArrLength) {
     const index = Math.round(Math.random() * firstArrLength);
@@ -21,17 +14,11 @@ export function sortingFunc() {
   }
 
   const exitArr: Array<Array<number>> = [];
-  let counter = 0;
-  secondArr.forEach(el => {
-    if(counter < 3) {
-      counter = 0;
-      exitArr[exitArr.length].push(el);
-    } else {
-      counter += 1;
-      exitArr[exitArr.length].push(el);
-    }
+  for (let i = 0; i < secondArr.length; i += 4) {//! change for constanta
+    const chunk = secondArr.slice(i, i + 4);//! change for constanta
+    exitArr.push(chunk);
+  }
 
-  })
-
-  console.log('firstArrLength:', firstArrLength, 'firstArr:', firstArr, 'secondArr:', secondArr, 'exitArr:', exitArr);
+  console.log('firstArrLength:', firstArrLength, 'firstArr:', firstArr, 'secondArr:',
+    secondArr, 'exitArr:', exitArr, 'exitArr.length:', exitArr.length);
 }
