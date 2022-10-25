@@ -7,8 +7,9 @@ import { sortingFunc } from './Utils/Sorting';
 
 function App() {
   console.log('App');
-  // sortingFunc();
+  const curGameArr = sortingFunc();
 
+  console.log('curGameArr:', curGameArr);
   return (
     <div className="App">
       <AppHeader/>

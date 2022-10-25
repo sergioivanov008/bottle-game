@@ -1,11 +1,11 @@
 import React from 'react';
 import Bottle from '../Bottle/Bottle';
-import { sortingFunc } from '../Utils/Sorting';
+// import { sortingFunc } from '../Utils/Sorting';
 import './AppBody.css';
 
 function AppBody() {
-  sortingFunc();
-  
+  // sortingFunc();
+
   return (
     <div className="AppBody">
       <Bottle/>

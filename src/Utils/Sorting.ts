@@ -11,7 +11,7 @@ export function sortingFunc() {
 
   const secondArr: Array<number> = [];
   while (secondArr.length !== firstArrLength) {
-    const index = Math.round(Math.random() * firstArrLength);
+    const index = Math.floor(Math.random() * firstArrLength);
     secondArr.push(firstArr[index])
   }
 
@@ -22,6 +22,7 @@ export function sortingFunc() {
     // colorSchemeObj.push(chunk);
   }
 
-  console.log('firstArrLength:', firstArrLength, 'firstArr:', firstArr, 'secondArr:',
-    secondArr, 'exitArr:', exitArr, 'colorSchemeObj:', colorSchemeObj);
+  // console.log('firstArrLength:', firstArrLength, 'firstArr:', firstArr, 'secondArr:',
+  //   secondArr, 'exitArr:', exitArr, 'colorSchemeObj:', colorSchemeObj);
+  return exitArr;
 }
