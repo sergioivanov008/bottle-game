@@ -19,7 +19,6 @@ export function sortingFunc() {
   for (let i = 0; i < secondArr.length; i += numWaters) {
     const chunk = secondArr.slice(i, i + numWaters);
     exitArr.push(chunk);
-    // colorSchemeObj.push(chunk);
   }
 
   // console.log('firstArrLength:', firstArrLength, 'firstArr:', firstArr, 'secondArr:',
