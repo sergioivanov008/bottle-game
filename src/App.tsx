@@ -4,16 +4,22 @@ import './App.css';
 import AppHeader from './AppHeader/AppHeader';
 import AppBody from './AppBody/AppBody';
 import { sortingFunc } from './Utils/Sorting';
+// import { colorSchemeObj } from './Utils/Constants';
+
+const colorSchemeObj = localStorage.colorSchemeObj ? localStorage.colorSchemeObj : sortingFunc();
+
+console.log('+++');
 
 function App() {
   console.log('App');
-  const curGameArr = sortingFunc();
+  // const curGameArr = sortingFunc();
 
-  console.log('curGameArr:', curGameArr);
+  console.log('curGameArr:', colorSchemeObj);
+
   return (
     <div className="App">
       <AppHeader/>
-      <AppBody/>
+      <AppBody colorScheme = {colorSchemeObj}/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

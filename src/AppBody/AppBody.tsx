@@ -1,27 +1,17 @@
 import React from 'react';
 import Bottle from '../Bottle/Bottle';
-// import { sortingFunc } from '../Utils/Sorting';
 import './AppBody.css';
 
-function AppBody() {
-  // sortingFunc();
+function AppBody(props: {colorScheme: number[][]}) {
+  console.log('props.colorScheme:', props.colorScheme)
+
+  const colorSheme = props.colorScheme;
 
   return (
     <div className="AppBody">
-      <Bottle/>
-      <Bottle/>
-      <Bottle/>
-      <Bottle/>
-      <Bottle/>
-      <Bottle/>
-      <Bottle/>
-      <Bottle/>
-      <Bottle/>
-      <Bottle/>
-      <Bottle/>
-      <Bottle/>
-      <Bottle/>
-      <Bottle/>
+      {colorSheme.map((el, i) => (
+        <Bottle sheme={el} id={i}/>
+      ))}
     </div>
   );
 }

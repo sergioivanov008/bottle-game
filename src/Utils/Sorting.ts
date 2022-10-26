@@ -1,4 +1,4 @@
-import { colorSchemeObj, numColors, numWaters } from "./Constants";
+import { numColors, numWaters } from "./Constants";
 
 export function sortingFunc() {
   const firstArr: Array<number> = [];
