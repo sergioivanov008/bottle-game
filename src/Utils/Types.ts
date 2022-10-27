@@ -1,5 +1,6 @@
 export interface AppBodyType {
   colorScheme: number[][],
+  changeBottle(id: number): void,
 }
 
 export interface BottleType {

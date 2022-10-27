@@ -16,12 +16,16 @@ function App() {
   // const curGameArr = sortingFunc();
 
   console.log('curGameArr:', colorSchemeObj);
-  const [colorScheme, setColorScheme] = useState(colorSchemeObj)
+  const [colorScheme, setColorScheme] = useState(colorSchemeObj);
+
+  const changeBottle = (id: number) => {
+    console.log(`clicked by bottle # ${id}`)
+  }
 
   return (
     <div className="App">
       <AppHeader/>
-      <AppBody colorScheme = {colorScheme} />
+      <AppBody colorScheme = {colorScheme} changeBottle={changeBottle}/>
     </div>
   );
 }
