@@ -13,7 +13,7 @@ function AppBody(props: AppBodyType) {
   return (
     <div className="AppBody">
       {colorScheme.map((el, i) => (
-        <Bottle sheme={el} id={i} key={i}/>
+        <Bottle sсheme={el} changeBottle={changeBottle} id={i} key={i}/>
       ))}
     </div>
   );

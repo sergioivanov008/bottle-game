@@ -4,8 +4,9 @@ export interface AppBodyType {
 }
 
 export interface BottleType {
-  sheme: number[],
+  sсheme: number[],
   id: number,
+  changeBottle(id: number): void,
 }
 
 export interface WaterType {
