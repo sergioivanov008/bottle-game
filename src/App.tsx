@@ -13,7 +13,7 @@ function App() {
 
   const [colorScheme, setColorScheme] = useState(colorSchemeObj);
 
-  console.log('colorScheme: ', colorScheme);
+  // console.log('colorScheme: ', colorScheme);
 
   let bottleOne: null | number = null;
   let bottleTwo: null | number = null;
