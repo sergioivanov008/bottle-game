@@ -11,15 +11,20 @@ export const colorSchemeObj: number[][] = localStorage.colorSchemeObj
 function App() {
   console.log('App render');
 
-  // console.log('curGameArr:', colorSchemeObj);
   const [colorScheme, setColorScheme] = useState(colorSchemeObj);
-  // const [colorOne, setColorOne] = useState(0);
-  // const [colorTwo, setColorTwo] = useState(0);
+
+  console.log('colorScheme: ', colorScheme);
+
   let bottleOne: null | number = null;
   let bottleTwo: null | number = null;
+
   const clearBottles = (): void => {
     bottleOne = null;
     bottleTwo = null;
+  }
+
+  const gameLogic = (one: number, two: number): void => {
+    console.log('start gameLogic with ', one, 'and ', two);
   }
 
   const changeBottle = (id: number) => {
@@ -35,8 +40,8 @@ function App() {
     }
 
     if(bottleOne !== null && bottleTwo !== null) {
+      gameLogic(bottleOne, bottleTwo);
       clearBottles();
-      console.log('start gaming');
     }
 
     console.log('bottleOne, bottleTwo: ', bottleOne, bottleTwo);

@@ -4,57 +4,64 @@
 }
 
 .color1{
-  background-color: #ab3636;
+  background-color: #ff0000;
 }
 
 .color2{
-  background-color: #ab7636;
+  background-color: #ff8c00;
 }
 
 .color3{
-  background-color: #aba736;
+  background-color: #fff700;
 }
 
 .color4{
-  background-color: #71ab36;
+  background-color: #80ff00;
 }
 
 .color5{
-  background-color: #36ab67;
+  background-color: #008839;
 }
 
 .color6{
-  background-color: #36aba5;
+  background-color: #00fff2;
 }
 
 .color7{
-  background-color: #367cab;
+  background-color: #0099ff;
 }
 
 .color8{
-  background-color: #3c36ab;
+  background-color: #0d00ff;
 }
 
 .color9{
-  background-color: #7136ab;
+  background-color: #8000ff;
 }
 
 .color10{
-  background-color: #ab3680;
+  background-color: #9c0063;
 }
 
 .color11{
-  background-color: #a136ab;
+  background-color: #7b0086;
 }
 
 .color12{
-  background-color: #ab3682;
+  background-color: #ffa1de;
 }
 
 .color13{
-  background-color: #ab364d;
+  background-color: #a4a4a4;
 }
 
 .color14{
-  background-color: #590a8a;
+  background-color: #270040;
+}
+
+.animationStyle{
+  /* transform: scaleY(0); */
+  transform: translateY(10px, 50%);
+  transform-origin: bottom;
+  transition: 1000ms;
 }
