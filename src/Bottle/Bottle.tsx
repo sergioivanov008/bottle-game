@@ -6,18 +6,19 @@ import './Bottle.css';
 function Bottle(props: BottleType) {
 
   const {id, sсheme, changeBottle} = props;
+  const reverseArr = sсheme.slice(0).reverse();
 
   const ref = useRef<HTMLDivElement | null>(null);
 
   const clickCurBottle = () => {
     changeBottle(id);
-    const element = ref?.current?.getBoundingClientRect();
-    console.log('element: ', element);
+    // const element = ref?.current?.getBoundingClientRect();
+    // console.log('element: ', element);
   }
 
   return (
     <div className="Bottle" onClick={clickCurBottle} key={id} ref={ref}>
-      {sсheme.map((el, i) => (
+      {reverseArr.map((el, i) => (
           <Water colorNumber={el} key={i}/>
         ))
       }

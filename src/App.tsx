@@ -24,7 +24,8 @@ function App() {
   }
 
   const gameLogic = (one: number, two: number): void => {
-    console.log('start gameLogic with ', one, 'and ', two);
+    console.log('start gameLogic with bottle number', one, 'and bottle number ', two);
+    console.log('color number ', colorScheme[one], ' and color number ', colorScheme[two])
   }
 
   const changeBottle = (id: number) => {
