@@ -1,14 +1,14 @@
 export interface AppBodyType {
-  colorScheme: number[][],
+  colorScheme: (number | null)[][],
   changeBottle(id: number): void,
 }
 
 export interface BottleType {
-  sсheme: number[],
+  sсheme: (number | null)[],
   id: number,
   changeBottle(id: number): void,
 }
 
 export interface WaterType {
-  colorNumber: number,
+  colorNumber: number | null,
 }

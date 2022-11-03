@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { emptyWater } from '../Utils/Constants';
 import { WaterType } from '../Utils/Types';
 import './Water.css';
 
 function Water(props: WaterType) {
-  const {colorNumber} = props;
-  let [curStyle, setCurStyle] = useState(emptyWater + ` color${colorNumber}`);
+  let curStyle = emptyWater + ` color${props.colorNumber}`;
 
-  const changeStyle = () => {
-    setCurStyle(curStyle += ' animationStyle')
-  }
+  // const changeStyle = () => {
+  //   curStyle += ' animationStyle';
+  // }
 
   return (
     <div className={curStyle} /*onClick={changeStyle}*/>

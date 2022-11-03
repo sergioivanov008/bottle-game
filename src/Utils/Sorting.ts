@@ -18,15 +18,14 @@ export function sortingFunc() {
     }
   }
 
-  const exitArr: Array<Array<number>> = [];
+  const exitArr: Array<Array<number | null>> = [];
   for (let i = 0; i < secondArr.length; i += numWaters) {
     const chunk = secondArr.slice(i, i + numWaters);
     exitArr.push(chunk);
   }
 
-  exitArr.push(new Array(4).fill(0));
-  exitArr.push(new Array(4).fill(0));
-  // console.log('firstArrLength:', firstArr, 'secondArr:',
-  //   secondArr, 'exitArr:', exitArr);
+  exitArr.push([]);
+  exitArr.push([]);
+  
   return exitArr;
 }
